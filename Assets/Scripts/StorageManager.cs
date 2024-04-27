@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class StorageManager : MonoBehaviour
 {
-    public static StorageManager Instance;
+    public static StorageManager Instance { get; private set; }
     public string playerName;
     public List<string> highscoreName;
     public List<int> highscore;
