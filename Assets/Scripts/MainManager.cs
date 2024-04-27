@@ -12,6 +12,7 @@ public class MainManager : MonoBehaviour
 
     public Text ScoreText;
     public GameObject GameOverText;
+    [SerializeField] GameObject menuButton;
     
     private bool m_Started = false;
     private int m_Points;
@@ -72,5 +73,6 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+        menuButton.SetActive(true);
     }
 }
